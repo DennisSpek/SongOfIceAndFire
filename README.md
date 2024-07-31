@@ -27,7 +27,13 @@ cd SongOfIceAndFire
 npm install
 ```
 
-4. Run build:
+4. Create build:
+
+```sh
+npm build
+```
+
+5. Run build:
 
 ```sh
 npm start
