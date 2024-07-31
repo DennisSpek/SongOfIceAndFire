@@ -15,7 +15,7 @@ export default async function Page({ params }: { params: { houseId: string } }) 
       </div>
       <div className='flex flex-col items-center'>
         <label className='text-2xl'>Members</label>
-        <div className='flex gap-4 flex-wrap p-4 justify-center h-full overflow-scroll w-[1200px] max-h-[400px]'>
+        <div className='flex gap-4 flex-wrap p-4 justify-center h-full overflow-scroll w-full min-w-[400px] max-h-[400px]'>
           {data?.swornMembers?.length > 0 ? (
             data.swornMembers.map((character: string, key: number) => (
               <CharacterCard key={key} characterUrl={character} />
